@@ -1,0 +1,447 @@
+.background {
+  width: 100%;
+  height: 200vh;
+  position: fixed;
+  background-color: #cbbc97af;
+}
+
+.particles-container {
+  width: 45%;
+  height: 90vh;
+}
+
+.particle-black {
+  width: 25%;
+  height: 20vh;
+  background-color: rgba(0, 0, 0, 0.774);
+  border-radius: 23% 77% 57% 43% / 74% 24% 76% 26%;
+}
+
+.particle-earth {
+  width: 50%;
+  height: 40vh;
+  background-color: #835307e3;
+  border-radius: 74% 26% 32% 68% / 86% 58% 42% 14%;
+}
+
+.particle-black-one {
+  animation: rotate_move 46s linear infinite forwards;
+}
+
+.particle-black-two {
+  animation: rotate_move 30s linear infinite forwards;
+}
+
+.particle-earth-one {
+  animation: rotate_move 26s linear infinite backwards;
+}
+
+.particle-earth-two {
+  animation: rotate_move 50s linear infinite forwards;
+}
+
+@keyframes rotate_move {
+  0% {
+    transform: rotate(0deg);
+    transform: translateX(-10%) translateY(-10vh);
+  }
+  25% {
+    transform: rotate(90deg);
+    transform: translateX(-40%) translateY(30vh);
+  }
+  50% {
+    transform: rotate(180deg);
+    transform: translateX(60%) translateY(-60vh);
+  }
+  75% {
+    transform: rotate(270deg);
+    transform: translateX(40%) translateY(40vh);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: translateX(-10%) translateY(-10vh);
+  }
+}
+
+.landing {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background-color: black;
+  z-index: 25;
+  transition: transform 0.7s ease-in-out;
+  z-index: 25;
+}
+
+.mask {
+  width: 100%;
+  height: 200vh;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.295);
+  z-index: 1000;
+  backdrop-filter: blur(185px);
+  -webkit-backdrop-filter: blur(185px);
+  z-index: 5;
+}
+
+/* MAIN */
+
+#main-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* NAVBAR */
+
+.navbar-main-container {
+  width: 100%;
+  height: 150px;
+  position: fixed;
+  z-index: 16;
+}
+
+.navbar-container {
+  width: 90%;
+  height: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 95px;
+}
+
+.logo-small {
+  width: 50px;
+  height: 50px;
+}
+
+.hamburger-menu {
+  width: auto;
+  height: auto;
+}
+
+.hamburger-menu h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hover-underline-trigger {
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.trigger-black {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: translate(-100%);
+  transition: transform 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hamburger-menu:hover .trigger-black {
+  transform: translateX(0);
+}
+
+.navbar-slider-main-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  transform: translateY(-150vh);
+  position: fixed;
+  z-index: 11;
+}
+
+
+/*--------------------------------------------------------------------------- ONE*/
+
+.about-me-div{
+    width: 100%;
+    height: 100vh;
+    z-index: 6;
+    position: relative;
+}
+
+
+.about-me-section-one-container{
+  padding-top: 80px;
+}
+
+.section-one-main{
+  width: 70%;
+  height: auto;
+  padding-top: 20px;
+}
+
+.section-one-main h1{
+  font-family: "Inria Serif", serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 7rem;
+  padding-left: 80px;
+}
+
+.section-one-desc-container{
+  width: 100%;
+  height: 75vh;
+}
+
+.section-one-desc-one{
+  width: 100%;
+  height: 75vh;
+}
+
+.desc-container{
+  width: 50%;
+  height: 75vh;
+}
+
+.section-one-desc-about{
+  width: 30%;
+  height: 75vh;
+  line-height: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: rgb(66, 66, 66);
+}
+
+.image-one-about-container{
+  width: 50%;
+  height: 55vh;
+  width: 70%;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#yoga-one{
+  width: 100%;
+  height: 70vh;
+  object-fit: fill;
+}
+
+
+/*--------------------------------------------------------------------------- ONE*/
+
+/*--------------------------------------------------------------------------- TWO*/
+
+.about-me-section-two{
+  width: 100%;
+  height: auto;
+}
+
+.about-me-desc-two-container{
+  width: 70%;
+  height: auto;
+  justify-content:center;
+}
+
+.about-me-desc-two-container h1{
+  width: auto;
+  height: auto;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.about-me-section-two-desc-container{
+  width: 100%;
+  height: auto;
+}
+
+.about-me-section-two-desc-container-one{
+  width: 50%;
+  height: auto;
+  margin-top: 100px;
+}
+
+.about-me-section-two-desc-container-two{
+  width: 50%;
+  height: auto;
+}
+
+.about-me-section-two-desc-container-desc{
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+}
+
+.about-me-section-two-desc-container-desc p{
+  line-height: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: rgb(66, 66, 66);
+}
+
+#yoga-two{
+  width: 90%;
+  height: 60vh;
+  background-position: center;
+}
+
+/*--------------------------------------------------------------------------- TWO*/
+
+/*--------------------------------------------------------------------------- THREE*/
+
+.about-me-section-three-container{
+  width: 100%;
+  height: auto;
+}
+
+.about-me-section-three-main-container{
+  margin: 150px 0px;
+  width: 70%;
+  height: 90vh;
+  overflow: hidden;
+  background-color: black;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+.scroll-image-display{
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+}
+
+.img{
+  width: 40%;
+  height: 25vh;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.scroll-image-display-one{
+  width: 150%;
+}
+.scroll-image-display-two{
+  width: 200%;
+  transform: translateX(-50%);
+}
+.scroll-image-display-three{
+  width: 150%;
+}
+
+.scroll-div-one{
+  width: 50%;
+  height: 28vh;
+  background-color: white;
+}
+.scroll-div-two{
+  width: 20%;
+  height: 28vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.scroll-div-three{
+  width: 15%;
+  height: 28vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.scroll-div-four{
+  width: 10%;
+  height: 30vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.scroll-div-five{
+  width: 15%;
+  height: 30vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.scroll-div-six{
+  width: 25%;
+  height: 30vh;
+  background-color: white;
+  margin-left: 10px;
+}
+.scroll-div-seven{
+  width: 15%;
+  height: 30vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.scroll-div-eight{
+  width: 25%;
+  height: 28vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.scroll-div-nine{
+  width: 25%;
+  height: 28vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.scroll-div-ten{
+  width: 15%;
+  height: 28vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.scroll-div-eleven{
+  width: 15%;
+  height: 28vh;
+  background-color: white;
+  margin-left: 10px;
+}
+
+/*--------------------------------------------------------------------------- THREE*/
+
+/*--------------------------------------------------------------------------- FOUR*/
+
+.about-me-section-four-container{
+  width: 100%;
+  height: 50vh;
+  text-align: center;
+}
+
+.about-me-section-four-container h1{
+  font-family: "Inria Serif", serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.about-me-btn-one{
+  padding: 20px;
+  background-color: black;
+  color: rgb(203, 188, 151);
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 50px;
+}
+
+/*--------------------------------------------------------------------------- FOUR*/
+
+/*--------------------------------------------------------------------------- FOOTER*/
+
+
+.footer-main-container{
+  width: 100%;
+  height: 9vh;
+  background-color: black;
+}
