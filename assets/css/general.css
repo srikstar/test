@@ -1,0 +1,232 @@
+.background-main-container {
+  width: 300vh;
+  height: 100vh;
+  background-color: rgb(248, 241, 223);
+  position: fixed;
+  z-index: -1;
+}
+
+.black-mask {
+  width: 100%;
+  height: 100vh;
+  z-index: 25;
+  background-color: red;
+  position: fixed;
+}
+
+.blur-mask {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(150px);
+  -webkit-backdrop-filter: blur(150px);
+}
+
+.navbar-slider-main-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  transform: translateY(-120vh);
+  overflow: hidden;
+  background-color: black;
+  border-bottom: 1px solid rgb(203, 188, 151);
+}
+
+.navbar-main-container {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 10;
+  padding: 20px 0px;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+  position: absolute;
+}
+
+.background-subsection-one {
+  width: 90%;
+  height: 80vh;
+}
+
+.background {
+  width: 50%;
+  height: 80vh;
+}
+
+.particle-moon {
+  width: 300px;
+  height: 200px;
+  background-color: rgb(80, 77, 77);
+}
+
+.particle-earth {
+  width: 500px;
+  height: 400px;
+  background-color: rgba(131, 83, 7, 0.699);
+}
+
+.moon-one {
+  border-radius: 52% 48% 70% 30% / 30% 30% 70% 70%;
+  animation: rotate 20s linear forwards infinite;
+}
+
+.earth-two {
+  border-radius: 52% 48% 70% 30% / 30% 30% 70% 70%;
+  animation: rotate 10s linear backwards infinite;
+}
+
+.moon-two {
+  border-radius: 18% 82% 24% 76% / 78% 65% 35% 22%;
+  animation: rotate 20s linear backwards infinite;
+}
+
+.earth-one {
+  border-radius: 18% 82% 24% 76% / 78% 65% 35% 22%;
+  animation: rotate 35s linear forwards infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translateX(-30%) translateY(-20vh);
+  }
+  25% {
+    transform: rotate(90deg) translateX(-20%) translateY(-70vh);
+  }
+  50% {
+    transform: rotate(180deg) translateX(-70%) translateY(-65h);
+  }
+  75% {
+    transform: rotate(270deg) translateX(-80%) translateY(-40vh);
+  }
+  100% {
+    transform: rotate(360deg) translateX(-30%) translateY(-20vh);
+  }
+}
+
+.navbar-section-container {
+  width: 85%;
+  height: auto;
+}
+
+.main-logo-img-div {
+  width: 110px;
+  height: 100px;
+}
+
+.main-logo-img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 430px) {
+  .main-logo-img-div {
+    width: 70px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-logo-img-div {
+    width: 80px;
+    height: 70px;
+  }
+}
+
+.hamburber-container {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.ham-size {
+  width: 35px;
+  height: 2px;
+  background-color: rgb(112, 112, 112);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hamberber-continer:hover .ham-size {
+  background-color: black;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navlinks-container {
+  width: 50%;
+  height: 90vh;
+  opacity: 0;
+}
+
+.device-screen-rotate{
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: none;
+    position: fixed;
+    background-color: black;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.navlinks {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-size: 4rem;
+  font-family: "Inria Serif", serif;
+  margin: 10px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(48, 48, 48);
+  transition: color 0.3s ease-in-out;
+}
+
+.navlinks:hover a {
+  color: rgb(203, 188, 151);
+  transition: color 0.3s ease-in-out;
+}
+
+.copyright-nav {
+  width: 50%;
+  height: auto;
+  font-family: "Inter", sans-serif;
+  color: rgb(203, 188, 151);
+}
+
+@media screen and (max-width: 1200px) {
+  .navlinks {
+    font-size: 3rem;
+  }
+  .navlinks-container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-height: 950px) {
+    .navlinks {
+      font-size: 3rem;
+    }
+  }
+
+  @media screen and (max-height: 600px) {
+    .navlinks {
+      font-size: 2.5rem;
+    }
+  }
+
+
+
+@media screen and (max-width: 550px) {
+  .navlinks {
+    font-size: 2rem;
+  }
+  .navlinks-container {
+    width: 90%;
+  }
+}
