@@ -178,6 +178,7 @@ h1{
     font-size: clamp(1rem, 10vw, 2.5rem);
     font-weight: 200;
     line-height: 55px;
+    text-align: start;
   }
 
   .text-italic {
@@ -220,4 +221,3 @@ h1{
         margin: 50px 0px;
     }
 }
-
