@@ -15,9 +15,9 @@
 
 .terms-container p{
     font-family: "Inter", sans-serif;
-    font-size: clamp(1rem, 2vw, 1.4rem);
-    font-weight: 400;
-    line-height: clamp(1.3rem, 2vw, 20vh)
+    text-align: justify;
+    line-height: clamp(25px, 2vw, 35px);
+    font-size: clamp(1rem, 2vw, 1.3rem)
 }
 
 .terms-container li{
@@ -33,7 +33,7 @@ ul{
 }
 
 li{
-    margin-top: clamp(1rem, 3vw, 2.2vh) ;
+    margin-top: clamp(1rem, 3vw, 2vh) ;
 }
 
 /**/
