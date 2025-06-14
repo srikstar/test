@@ -173,7 +173,7 @@
 .navdrop {
   width: 100%;
   height: 100vh;
-  background-color: black;
+  background-color:rgb(247, 243, 232);
   position: fixed;
   z-index: 8;
   transform: translateY(-100vh);
@@ -197,16 +197,21 @@
 }
 
 .navcredits {
-  width: 100%;
+  width: 80%;
   height: 30px;
-  border-bottom: 1px solid rgba(238, 230, 211, 0.822);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.822);
   position: absolute;
   bottom: 0px;
 }
 
+.navimplinks{
+  width: 80%;
+  height: auto;
+}
+
 .navcredits p {
   font-family: "Inter", sans-serif;
-  color: rgba(238, 230, 211, 0.822);
+  color: rgba(0, 0, 0, 0.822);
 }
 
 .navlinks-container {
@@ -224,7 +229,7 @@
 .navlinks a {
   font-family: "BeautiqueDisplay";
   font-size: clamp(1.8rem, 8vw, 6rem);
-  color: rgba(238, 230, 211, 0.822);
+  color: black
 }
 
 .link-transition {
@@ -252,11 +257,20 @@
   height: auto;
 }
 
+.navimplinks a{
+  color: black;
+}
+
 .nav-email-container > a {
   font-family: "Inter", sans-serif;
   font-size: clamp(1.2rem, 2vw, 2rem);
   color: rgb(68, 68, 68);
   transition: color 0.3s ease-in-out;
+}
+
+.navdrop-info{
+  width: calc(30vh + 20vw);
+  height: auto;
 }
 
 .nav-email-container > a:hover {
@@ -284,7 +298,6 @@
 @media screen and (max-width: 1200px) {
   .navlinks-main-container {
     width: 60%;
-    height: calc(40vh + 20vw);
   }
   .nav-social-container {
     width: 30%;
@@ -380,7 +393,7 @@
 .ham {
   width: 100%;
   height: 2px;
-  background-color: rgb(87, 87, 87);
+  background-color: rgb(0, 0, 0);
   margin: 8px 0px;
   border-radius: 10px;
 }
@@ -393,25 +406,6 @@
 .main-section-container {
   position: relative;
   z-index: 5;
-}
-
-
-.about-footer-container{
-    position: absolute;
-    bottom: 0px;
-    margin-top: calc(5vh + 12vw);
-    width: 100%;
-    height: calc(5vh + 5vw);
-}
-
-.about-footer{
-    width: 80%;
-    height: auto
-}
-
-.about-footer-container h4{
-    font-family: BeautiqueDisplay;
-    font-size: clamp(1rem, 5vw, 2rem);
 }
 
 @media screen and (max-width: 700px) {
