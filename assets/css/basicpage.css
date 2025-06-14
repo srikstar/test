@@ -228,7 +228,7 @@
 
 .navlinks a {
   font-family: "BeautiqueDisplay";
-  font-size: clamp(1.8rem, 8vw, 6rem);
+  font-size: clamp(1.8rem, 8vw, 4rem);
   color: black
 }
 
