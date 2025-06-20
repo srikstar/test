@@ -30,31 +30,25 @@
 }
 
 
-
 h1{
     font-family: BeautiqueDisplay;
+    font-size: clamp(3rem, 5vw, 4rem);
 }
 
 h3{
     font-family: BeautiqueDisplay;
-    font-size: clamp(1.2rem, 2vw, 2rem);
-    font-weight: 400;
-    line-height: 40px;
 }
 
 h2{
     font-family: BeautiqueDisplay;
-    font-size: clamp(1.2rem, 2vw, 3rem);
+    font-size: clamp(1.6rem, 2vw, 3rem);
     font-weight: 400;
+    line-height: 35px;
 }
 
 h4{
     font-size: clamp(0.8rem, 2vw, 1.2rem);
     font-weight: 400;
-}
-
-p{
-    line-height: 25px;
 }
 
 .section-one-sub-one > h1{
@@ -77,10 +71,11 @@ p{
 }
 
 .training-section-two-para{
-    width: 70%;
+    width: 80%;
     height: auto;
     text-align: justify;
-    line-height: 25px;
+    line-height: 35px;
+    font-size: clamp(1.3rem, 2vw, 1.3rem)
 }
 
 
@@ -119,6 +114,20 @@ p{
 .training-section-three-para{
     width: 90%;
     height: auto;
+}
+
+.training-section-three-para > h3{
+    font-family: BeautiqueDisplay;
+    font-size: clamp(2rem, 5vw, 2.5rem);
+    font-weight: 300;
+    line-height: 50px;
+    margin-top: calc(0.5vh + 0.5vw);
+}
+
+.training-section-three-para > p{
+    text-align: justify;
+    line-height: 35px;
+    font-size: clamp(1.3rem, 2vw, 1.3rem)
 }
 
 /**/
@@ -213,6 +222,9 @@ p{
     height: auto;
     background-color: antiquewhite;
     padding: calc(1vh + 1vw);
+    text-align: justify;
+    line-height: 35px;
+    font-size: clamp(1.3rem, 2vw, 1.3rem)
 }
 
 .level-numbering-container{
@@ -241,7 +253,7 @@ p{
 .training-section-five-heading{
     width: 50%;
     text-align: center;
-    margin-bottom: calc(1vh + 3vh);
+    margin-bottom: calc(3vh + 1vw);
 }
 
 .training-price-container{
@@ -304,6 +316,7 @@ hr{
 
 .training-course-six-container .training-section-five-heading{
     width: 100%;
+    padding: calc(1vh + 1vw) 0px;
 }
 
 /**/
@@ -311,6 +324,7 @@ hr{
 .training-course-six-container{
     width: 80%;
     height: auto;
+    margin-top: calc(4vh + 4vw);
 }
 
 .section-six-sub-one{
@@ -332,6 +346,9 @@ hr{
 .training-section-six-para{
     width: 80%;
     height: auto;
+    text-align: justify;
+    line-height: 35px;
+    font-size: clamp(1.3rem, 2vw, 1.3rem)
 }
 
 /**/
@@ -388,6 +405,15 @@ hr{
     }
 }
 
+@media screen and (max-width: 900px) {
+    .training-section-three-sub-one{
+        width: 100%;
+    }
+    .training-section-three-sub-two{
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .section-one-sub-one{
         width: 100%;
@@ -421,11 +447,9 @@ hr{
         width: 100%;
     }
     .training-section-three-sub-one{
-        width: 100%;
         height: calc(15vh + 15vw);
     }
     .training-section-three-sub-two{
-        width: 100%;
         height: auto;
         padding: calc(2vw + 2vh) 0px;
     }
