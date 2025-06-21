@@ -5,6 +5,7 @@
   padding: 0px;
   text-decoration: none;
   font-family: "Inter", sans-serif;
+  user-select: none;
 }
 
 /**/
@@ -181,9 +182,6 @@
   overflow-y: scroll;
 }
 
-.navdrop::-webkit-scrollbar {
-  width: 0px;
-}
 
 .navmain-container {
   width: 100%;
@@ -362,6 +360,9 @@
   z-index: 10;
   padding: 10px 0px;
   cursor: pointer;
+  user-select: none; 
+  -webkit-tap-highlight-color: transparent;
+  outline: none; 
 }
 
 .navbar-container {
@@ -388,6 +389,9 @@
 .hamburger-menu-container {
   width: 40px;
   height: 30px;
+  user-select: none;       
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
 }
 
 .ham {
