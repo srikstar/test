@@ -1,16 +1,5 @@
-const blackscreen = document.querySelector('.blackscreen');
-
-function blackscreenDisplay(){
-    setTimeout(()=>{
-        blackscreen.style.opacity = 0
-        blackscreen.style.transition = 'opacity 0.3s ease-in-out'
-    },500)
-    setTimeout(()=>{
-        blackscreen.style.display = 'none'
-    },850)
-}
-
-blackscreenDisplay()
+// === Variable Declarations ===
+const blackscreen = document.querySelector(".blackscreen");
 
 const hamburger = document.querySelector(".hamburger-menu-container");
 const hamone = document.querySelector(".ham-one");
@@ -18,45 +7,64 @@ const hamtwo = document.querySelector(".ham-two");
 const navdrop = document.querySelector(".navdrop");
 const navbarlogo = document.querySelector(".navbar-logo");
 const linkview = document.querySelectorAll(".link-transition");
+
 let rotate = document.querySelector(".refresh-button-container");
 const reviewone = document.querySelector(".reviews-container-one");
 const reviewtwo = document.querySelector(".reviews-container-two");
 const reviewthree = document.querySelector(".reviews-container-three");
 let reviewCount = 0;
 
-const levelButtons = document.querySelectorAll('.classes-btn');
-const levelContainers = document.querySelectorAll('.levels-container-div');
+const levelButtons = document.querySelectorAll(".classes-btn");
+const levelContainers = document.querySelectorAll(".levels-container-div");
 
+const questions = document.querySelectorAll(".accordion-question");
+
+let activeHam = true;
+
+// === Black Screen Display ===
+function blackscreenDisplay() {
+  setTimeout(() => {
+    blackscreen.style.opacity = 0;
+    blackscreen.style.transition = "opacity 0.3s ease-in-out";
+  }, 500);
+  setTimeout(() => {
+    blackscreen.style.display = "none";
+  }, 850);
+}
+
+blackscreenDisplay();
+
+// === Level Button Switch ===
 levelButtons.forEach((button, index) => {
-  button.addEventListener('click', () => {
-    
-    levelButtons.forEach(btn => btn.classList.remove('level-black'));
-    levelContainers.forEach(container => container.classList.remove('level-display'));
+  button.addEventListener("click", () => {
+    levelButtons.forEach((btn) => btn.classList.remove("level-black"));
+    levelContainers.forEach((container) =>
+      container.classList.remove("level-display")
+    );
 
-    button.classList.add('level-black');
-    levelContainers[index].classList.add('level-display');
+    button.classList.add("level-black");
+    levelContainers[index].classList.add("level-display");
   });
 });
 
-const questions = document.querySelectorAll('.accordion-question');
-
+// === Accordion Questions ===
 questions.forEach((question) => {
-  question.addEventListener('click', () => {
-    const isOpen = question.classList.contains('active');
+  question.addEventListener("click", () => {
+    const isOpen = question.classList.contains("active");
 
-    questions.forEach(q => {
-      q.classList.remove('active');
-      q.nextElementSibling.style.display = 'none';
+    questions.forEach((q) => {
+      q.classList.remove("active");
+      q.nextElementSibling.style.display = "none";
     });
 
     if (!isOpen) {
-      question.classList.add('active');
-      question.nextElementSibling.style.display = 'block';
+      question.classList.add("active");
+      question.nextElementSibling.style.display = "block";
     }
   });
 });
 
-
+// === Hamburger Menu Toggle ===
 hamburger.addEventListener("click", function () {
   if (activeHam) {
     linkview.forEach((links, index) => {
