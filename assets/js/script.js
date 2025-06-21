@@ -38,27 +38,21 @@ levelButtons.forEach((button, index) => {
   });
 });
 
+const questions = document.querySelectorAll('.accordion-question');
 
-let activeHam = true;
+questions.forEach((question) => {
+  question.addEventListener('click', () => {
+    const isOpen = question.classList.contains('active');
 
-let qtab = document.querySelectorAll(".question-tab-container");
+    questions.forEach(q => {
+      q.classList.remove('active');
+      q.nextElementSibling.style.display = 'none';
+    });
 
-qtab.forEach((tab) => {
-  let isActive = false;
-  const arrow = tab.querySelector(".qtab-arrow");
-
-  tab.addEventListener("click", () => {
-    if (!isActive) {
-      tab.style.height = tab.scrollHeight + "px";
-      arrow.style.transform = "rotateX(180deg)";
-    } else {
-      tab.style.height = "3vh";
-      arrow.style.transform = "rotate(0deg)";
+    if (!isOpen) {
+      question.classList.add('active');
+      question.nextElementSibling.style.display = 'block';
     }
-
-    tab.style.transition = "height 0.3s ease-in-out";
-    arrow.style.transition = "transform 0.3s ease-in-out";
-    isActive = !isActive;
   });
 });
 
