@@ -1,0 +1,68 @@
+/**/
+
+.terms-container h1{
+    font-family: "EB Garamond", serif;
+    font-size: clamp(2rem, 10vw, 5rem);
+    font-weight: 400;
+}
+
+.terms-container h3{
+    font-family: "EB Garamond", serif;
+    font-size: clamp(1rem, 7vw, 2.6rem);
+    font-weight: 450;
+}
+
+
+.terms-container p{
+    font-family: "Inter", sans-serif;
+    text-align: start;
+    line-height: clamp(25px, 2vw, 35px);
+    font-size: clamp(1rem, 2vw, 1.3rem)
+}
+
+.terms-container li{
+    font-family: "Inter", sans-serif;
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 400;
+}
+
+ul{
+    width: auto;
+    height: auto;
+    padding-left: calc(1vw + 2vh);
+}
+
+li{
+    margin-top: clamp(1rem, 3vw, 2vh) ;
+}
+
+.about-footer > h4{
+    font-family: BeautiqueDisplay;
+    font-size: 1rem
+}
+
+/**/
+
+.main-section-container{
+    width: 100%;
+    height: auto;
+    padding-bottom: calc(20vw + 10vh);
+}
+
+.terms-container{
+    width: calc(20vh + 50vw);
+    height: auto;
+    margin-top: 150px;
+}
+
+.content-container-small{
+    width: calc(30vh + 30vw);
+    height: auto;
+    margin: 40px 0px 10px 0px;
+}
+
+.content-sub-container{
+    width: calc(30vh + 30vw);
+    height: auto;
+    margin: 30px 0px;
+}
