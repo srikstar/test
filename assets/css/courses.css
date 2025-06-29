@@ -1,0 +1,116 @@
+/**/
+
+.course-heading-container > h1{
+    font-family: BeautiqueDisplay;
+    font-size: clamp(2.5rem, 10vw, 7rem);
+    text-align: center;
+}
+
+.course-para-one > p{
+    font-size: clamp(1.2rem, 1.5vw, 1.3rem);
+  line-height: 35px
+}
+
+.course-container > h3{
+    font-family: "EB Garamond", serif;
+    font-size: clamp(1rem, 7vw, 2.6rem);
+    font-weight: 450;
+}
+
+p{
+    padding: 10px 0px 0px 0px;
+    font-size: clamp(1.1rem, 1.5vw, 1.3rem);
+    line-height: 35px
+}
+
+.contact-email{
+    color: rgb(241, 160, 8);
+}
+
+
+.contact-email:hover
+{
+    text-decoration: underline;
+}
+
+.course-footer > h4
+{
+    font-family: BeautiqueDisplay;
+    font-size: 1rem
+}
+
+/**/
+
+.main-section-container{
+    width: auto;
+    height: auto;
+}
+
+
+.courses-main-container{
+    width: 90%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.course-para-one{
+    width: auto;
+    height: auto;
+}
+
+.course-heading-container{
+    width: calc(30vh + 30vw);
+    padding: calc(3vh + 3vw) 0px 0px 0px;
+    height: auto;
+}
+
+.course-section-two{
+    width: 100%;
+    height: auto;
+    padding: calc(5vh + 5vw) 0px;
+}
+
+.course-para-one{
+    width: 1000px;
+    height: auto;
+}
+
+.course-container-one{
+    width: calc(40vh + 40vw);
+    height: auto;
+}
+
+.course-container{
+    width: calc(40vh + 40vw);
+    padding: calc(5vh + 5vw) 0px 5px 0px;
+    height: auto;
+}
+
+.course-footer{
+    width: 100%;
+    padding: calc(5vh + 5vw) 0px 3px 0px;
+}
+/**/
+
+@media screen and (max-width: 615px) {
+    .course-container{
+        width: 100%;
+    }
+}
+
+
+
+
+/**/
+
+
+
+
+
+
+
+
+
+
+
+

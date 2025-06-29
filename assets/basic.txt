@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!-- New -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="icon" href="./assets/img/logo.ico">
+    <link rel="stylesheet" href="./assets/css/basicpage.css">
+    <title>Arka Healings</title>
+</head>
+<body>
+    
+    <div class="background row">
+        <div class="background-container column-se">
+            <div class="earth-one earth"></div>
+            <div class="moon-one moon"></div>
+        </div>
+        <div class="background-container column-se">
+            <div class="moon-two moon"></div>
+            <div class="earth-two earth"></div>
+        </div>
+    </div>
+
+    <div class="blur-mask"></div>
+    <div class="blackscreen"></div>
+    
+    <div class="navdrop column">
+        <!-- <div class="navspace"></div> -->
+        <div class="navmain-container row">
+            <div class="navlinks-main-container row">
+                <div class="navlinks-container column">
+                    <div class="navlinks"><div class="link-transition"><a href="">HOME</a></div></div>
+                    <div class="navlinks"><div class="link-transition"><a href="">ABOUT ME</a></div></div>
+                    <div class="navlinks"><div class="link-transition"><a href="">CLASSES</a></div></div>
+                    <div class="navlinks"><div class="link-transition"><a href="">CONTACT</a></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="navimplinks row">
+            <div class="navdrop-info row-sb">
+                <a href="">Terms</a>
+                <a href="">Privacy</a>
+                <a href="">Credits</a>
+            </div>
+        </div>
+    </div>
+
+    
+    <nav class="navbar row">
+        <section class="navbar-container row-sb">
+            <div class="navbar-logo-container">
+                <a href=""><img class="navbar-logo" src="./assets/img/arka.png" alt="navbar-logo"></a>
+            </div>
+            <div class="hamburger-menu-container">
+                <div class="ham ham-one"></div>
+                <div class="ham ham-two"></div>
+            </div>
+        </section>
+    </nav>
+    
+    <section class="main-section-container">
+        <div class="one">
+            
+        </div>
+        <div class="two">
+             
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="./assets/js/locomotive.js"></script>
+    <script src="./assets/js/script.js"></script>
+    
+</body>
+</html>
