@@ -8,9 +8,17 @@ function Signup() {
   const [password, setPassword] = useState('')
   const [cpassword, setCpassword] = useState('')
   
-  function handleSignin(){
-    const values = signup(values)
-    console.log(values)
+  function handleSignUp(){
+    if(password === cpassword){
+      const values = {
+        'name' : name,
+        'email':email,
+        'password':password
+      }
+      const response = signup(values)
+      console.log(response)
+    }
+    else alert('Password is Different')
   }
 
   return (
@@ -18,7 +26,7 @@ function Signup() {
         <section className='auth-signin-container'>
             <h1>Sign Up</h1>
             <br /><br />
-            <form action="/signin" onSubmit={handleSignin}>
+            <form onSubmit={handleSignUp}>
                 <label htmlFor='name'>Name<span style={{color: name.length > 0 ? 'grey' : 'red'}}>*</span></label><br />
                 <input type="text" name="name" id="name" autoComplete='true' required value={name} onChange={(e) => setName(e.target.value)}/>
                 <br /><br /><br />

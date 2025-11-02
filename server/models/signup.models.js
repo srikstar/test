@@ -7,7 +7,7 @@ const user = mongoose.Schema({
     },
     email:{
         type:String,
-        require:true,
+        required:true,
         unique:true
     },
     password:{
@@ -16,11 +16,11 @@ const user = mongoose.Schema({
     },
     roles:{
         type:String,
-        enum: ['admin', 'partnes', 'users'],
+        enum: ['admin', 'partners', 'users'],
         required:true,
         default:'users'
     }
-},{Timestamp:true})
+},{timestamp:true})
 
 const User = mongoose.model('Users', user)
 module.exports = User

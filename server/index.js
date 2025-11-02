@@ -1,10 +1,10 @@
 const express = require('express')
 const mongoDB = require('./mongoDB')
-const dontenv = require('dotenv')
+const dotenv = require('dotenv')
 const cors = require('cors')
 const userRouter = require('./routes/user.routes.js')
 
-dontenv.config()
+dotenv.config()
 const app = express()
 mongoDB.mongodb()
 app.use(express.json())

@@ -10,18 +10,18 @@ userRouter.post("/signup", async (req, res, next) => {
     // Check if the user exist
     const user = await Users.findOne({ email: req.body.email });
     if (user) {
-      res.send({
+      return res.send({
         success: false,
         message: "User Already Exists",
       });
     }
 
     // Hash the Password
-    const salt = await  bcrypt.genSalt(10)
-    const hashPwd = bcrypt.hashSync(req.body.password, salt)
+    const salt = await bcrypt.genSalt(10)
+    const hashPwd = await bcrypt.hashSync(req.body.password, salt)
     req.body.password = hashPwd
     
-    const newUser = await Users(req.body);
+    const newUser = new Users(req.body);
     await newUser.save();
 
     res.send({
@@ -40,10 +40,11 @@ userRouter.post("/signup", async (req, res, next) => {
 userRouter.post('/signin', async (req,res,next) => {
   try {
     const user = await Users.findOne({email:req.body.email})
-    if(!user) res.send({
+    if(!user) {return res.send({
       success:false,
       message:'User dont not exist'
     })
+  }
 
     const validPassword = await bcrypt.compare(req.body.password,user.password)
 
