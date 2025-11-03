@@ -3,7 +3,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    outline: none;
 }
 
 .row{
@@ -22,6 +21,7 @@
     align-items: center;
 }
 
+
 .column{
     display: flex;
     flex-direction: column;
@@ -30,14 +30,91 @@
     align-items: center;
 }
 
+/********************* FONTS ********************/
+
 a{
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: rgb(64, 64, 252);
 }
 
-.reusable-size-div{
+.landing-nav > h3{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.inline-para{
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+}
+
+.landing-nav a{
+    margin: 0px 15px;
+}
+
+.grey-text{
+    font-family: "Poppins", sans-serif;
+    color: grey;
+    font-size: 1rem;
+    margin-right: 50px;
+}
+
+.landing-tagline-container > h1{
+    font-family: "Inter", sans-serif;
+    font-size: 5.5rem;
+    font-weight: 300;
+}
+
+.landing-tagline-container > p{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    margin-top: 30px;
+}
+
+.italic{
+    font-size: 5.5rem;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(47, 0, 255);
+}
+
+.para-bold{
+    font-weight: bold;
+}
+
+.bold{
+    font-size: 5.5rem;
+    font-weight: 800;
+}
+
+/********************* MAIN ********************/
+
+.div{
     width: 100%;
+    height: auto;
 }
 
-button{
-    cursor: pointer;
+.landing-main-container{
+    height: 100vh;
+    position: absolute;
+}
+
+.sub-landing-container{
+    width: 90%;
+    height: auto;
+}
+
+.landing-tagline-container{
+    height: 90vh;
+    text-align: center;
+}
+
+.landing-footer-container{
+    height: auto;
+}
+
+.landing-footer-container > a{
+    margin: 0px 15px;
 }

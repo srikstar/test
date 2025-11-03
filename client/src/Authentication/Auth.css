@@ -1,178 +1,67 @@
-/* .poppins-black-italic {
-  font-family: "Poppins", sans-serif;
-  font-weight: 900;
-  font-style: italic;
-}
-Inter: CSS class for a variable style
-
-// <weight>: Use a value from 100 to 900
-// <uniquifier>: Use a unique and descriptive class name
-
-.inter-<uniquifier> {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
-
-.auth-page-main h3{
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-}
-
-.auth-main-forms-container h1{
-    font-family: "Inter", sans-serif;
-    font-size: 5rem;
-    font-weight: 400;
-}
-
-.italic-font{
-    font-family: "Inter", sans-serif;
-    font-size: 5rem;
-    font-style: italic;
-    font-weight: 600;
-}
-
-.auth-main-forms-container p{
+.auth-form-container h1{
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    color: grey;
-    margin-top: 15px;
-}
-
-hr{
-    width: 80%;
-    background-color: grey;
-    margin: 20px 0px;
-}
-
-.auth-main-container a{
-    font-family: "Inter", sans-serif;
-}
-
-.auth-signin-container h1{
     font-size: 3rem;
+    font-weight: 500;
 }
 
 label{
     font-family: "Poppins", sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    color: rgb(70, 70, 70);
 }
 
 input{
-    width: 60%;
-    font-family: "Poppins", sans-serif;
     padding: 5px 5px 5px 10px;
+    font-size: 1.2em;
+    width: 95%;
     border: 0px;
-    background-color: transparent;
-    border-bottom: 1px solid rgb(48, 48, 243);
+    border-bottom: 1px solid black;
 }
 
-.auth-signin-container p{
+form{
+    width: 100%;
+}
+
+input:focus{
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid black;
+}
+
+button{
+    padding: 5px 5px 5px 10px;
+    font-size: 1.2em;
+    width: 80%;
+    border: 2px solid black;
+    background-color: white;
+    padding: 10px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+
+
+
+/********************* FONTS ********************/
+
+.landing-auth-container{
+    height: 90vh;
+}
+
+.landing-auth-container  a{
+    margin: 0px;
     font-size: 0.9rem;
 }
 
-.auth-signin-container a{
-    color: rgb(39, 39, 182);
-}
-
-
-/*----------------------------------------------------- */
-.auth-main-container{
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(240, 237, 237);
-}
-
-.auth-page-one{
-    width: 40%;
-    height: 100vh;
-}
-
-.auth-page-main{
-    width: 85%;
+.auth-form-container{
+    width: 30%;
     height: auto;
+    padding: 10px 0px;
 }
-
-.auth-page-footer{
-    width: 100%;
-    height: auto;
-    padding-top: 20px;
-}
-
-.auth-page-social-icons{
-    width: 25%;
-}
-
-.auth-main-forms-container{
-    width: 100%;
-    height: 75vh;
-    padding: 80px 0px 10px 0px;
-}
-
-.auth-page-btn-container{
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-}
-
-.auth-page-btn{
-    width: auto;
-    border: 1px solid black;
-    border-radius: 5px;
-    transition: background-color 0.5s ease-out , color 0.5s ease-out;
-}
-
-.auth-page-two{
-    width: 60%;
-    height: 100vh;
-}
-
-.auth-page-image{
-    width: 100%;
-    height: 99.8vh;
-    object-fit: cover;
-    padding: 0px;
-    outline: none;
-}
-
-.auth-page-btn-container a{
-    color: black;
-    padding: 20px 100px;
-}
-
-.auth-page-btn-container a:hover{
-    color: white;
-    background-color: rgb(0, 0, 0);
-    transition: background-color 0.3s ease-in , color 0.3s ease-in;
-}
-
-.auth-page-footer a{
-    color: rgb(59, 59, 209);
-}
-
-/**/
-
-.auth-signin-container{
-    width: 100%;
-    height: auto;
-}
-
-.auth-signin-container .reusable-size-div{
-    margin-top: 80px;
-}
-
-.auth-btn{
-    width: 50%;
-    padding: 20px 0px;
-    border-radius: 5px;
-    color: black;
-    font-size: 1.2rem;
-    transition: background-color 0.2s ease-in , color 0.2s ease-in;
-}
-
-.auth-btn:hover{
-    color: white;
-    background-color: black;
-    transition: background-color 0.2s ease-in , color 0.2s ease-in;
-}   

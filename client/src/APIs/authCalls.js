@@ -1,24 +1,16 @@
 import axios from 'axios'
-import {API_BASE_URL} from './config.js'
+import { EXPRESS_URL_PATH } from './config'
 
 const api = axios.create({
-    baseURL : API_BASE_URL, 
-})
+        EXPRESS_URL_PATH
+    })
 
-export const signup = async(values) => {
-    try {
-        const response = await api.post('/api/auth/signup', values)
-        return response.data
-    } catch (error) {
-        console.log(error)
-    }
+export const signinapi = async (values) => {
+    const response = await api.post('/api/auth/signin', values)
+    return response.data
 }
 
-export const signin = async(values) => {
-    try {
-        const response = await api.post('/api/auth/signin', values)
-        return response
-    } catch (error) {
-        console.log(error)
-    }
+export const signupapi = async (values) => {
+    const response = await api.post('/api/auth/signup', values)
+    return response.data
 }
